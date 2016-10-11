@@ -23,21 +23,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,Game.class));
-                finish();
             }
         });
         btnInst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,Instructions.class));
-                finish();
             }
         });
         btnTeam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this,Team.class));
-                finish();
             }
         });
 

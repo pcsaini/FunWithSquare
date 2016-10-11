@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class Instructions extends AppCompatActivity {
 
-    Button btnPlay;
+    FloatingActionButton btnPlay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class Instructions extends AppCompatActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        btnPlay = (Button) findViewById(R.id.btnPlayInst);
+        btnPlay = (FloatingActionButton) findViewById(R.id.btnPlayInst);
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

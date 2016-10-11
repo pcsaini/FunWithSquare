@@ -11,15 +11,17 @@ import android.widget.Button;
 
 public class Team extends AppCompatActivity {
 
-    Button btnPlay;
+    FloatingActionButton btnPlay;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        btnPlay = (Button) findViewById(R.id.btnPlayTeam);
+        btnPlay = (FloatingActionButton) findViewById(R.id.btnPlayTeam);
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -13,4 +13,95 @@
     tools:showIn="@layout/activity_team"
     tools:context="com.example.pcsaini779.hackathon.Team">
 
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation = "vertical"
+        android:fillViewport="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:id="@+id/mem1"
+                android:background="@drawable/team"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/member1"
+                    android:textColor="#fff"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:id="@+id/mem2"
+                android:background="@drawable/team"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/member2"
+                    android:textColor="#fff"
+
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:id="@+id/mem3"
+                android:background="@drawable/team"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/member3"
+                    android:textColor="#fff"
+
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="20dp"
+                android:id="@+id/mem4"
+                android:background="@drawable/team"
+                android:orientation="vertical"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/member4"
+                    android:textColor="#fff"
+
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
 </RelativeLayout>

@@ -15,6 +15,8 @@ public class Game extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         txtView = (TextView) findViewById(R.id.txtView);
         btnNext = (Button) findViewById(R.id.btnNext);

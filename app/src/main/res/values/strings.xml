@@ -15,10 +15,24 @@
         "Here the user need to guess 5 different perfect squares of length 5 given a prefix of length 2.\n\n"
         "Entering \"SOLVE\" at any stage leads to display of the appropriate perfect Square.\n\n"
         "Next he enter FINISH to end the game.\n\n\n"
-
-
-
     </string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_team">Team</string>
+    <string name="member1">
+        "Prem Chand Saini\n"
+        "UI Development"
+    </string>
+    <string name="member2">
+        "K. Naveen Kumar\n"
+        "UI Development"
+    </string>
+    <string name="member3">
+        "Ajit Kumar Jain\n"
+        "UI Development"
+    </string>
+    <string name="member4">
+        "Jitendra Singh Rajput\n"
+        "UI Development"
+    </string>
+
 </resources>
