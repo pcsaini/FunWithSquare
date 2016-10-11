@@ -8,11 +8,14 @@
     tools:context="com.example.pcsaini779.hackathon.Instructions"
     tools:showIn="@layout/activity_instructions">
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
         android:layout_marginBottom="50dp"
+        android:textSize="22dp"
+        android:textColor="#000000"
         android:text="@string/large_text" />
 
 </android.support.v4.widget.NestedScrollView>

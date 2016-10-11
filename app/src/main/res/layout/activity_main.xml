@@ -9,55 +9,66 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context="com.example.pcsaini779.hackathon.MainActivity">
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="40dp"
-        android:src="@drawable/logo"/>
-
-    <Button
+    <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:text="Instructions"
-        android:layout_marginTop="10dp"
-        android:textSize="20dp"
-        android:padding="20dp"
-        android:textStyle="bold"
-        android:background="@drawable/team"
-        android:textColor="#ffffff"
-        android:id="@+id/btnInst"
-        />
+        android:orientation = "vertical"
+        android:fillViewport="false">
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/team"
-        android:textColor="#ffffff"
-        android:textSize="20dp"
-        android:padding="20dp"
-        android:text="Play Game"
-        android:textStyle="bold"
-        android:id="@+id/btnPlay"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:src="@drawable/logo"/>
 
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/team"
-        android:textSize="20dp"
-        android:padding="20dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="20dp"
-        android:textStyle="bold"
-        android:text="Teem"
-        android:textColor="#ffffff"
-        android:id="@+id/btnTeam"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="Instructions"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/team"
+                android:textColor="#ffffff"
+                android:id="@+id/btnInst"
+                />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/team"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:text="Play Game"
+                android:textStyle="bold"
+                android:id="@+id/btnPlay"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/team"
+                android:textSize="20dp"
+                android:padding="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:text="Team"
+                android:textColor="#ffffff"
+                android:id="@+id/btnTeam"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

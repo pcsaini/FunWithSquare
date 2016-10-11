@@ -9,50 +9,142 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.pcsaini779.hackathon.Game">
 
-
-    <TextView
+    <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtView"
-        android:text="Word"
-        android:padding="10dp"
-        android:textColor="#000000"
-        android:gravity="center"
-        />
-    <LinearLayout
-        android:layout_below="@id/txtView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:id="@+id/btnLayout">
+        android:orientation = "vertical"
+        android:fillViewport="false">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn"
+                android:padding="10dp"
+                android:textColor="#e91e63"
+                android:textSize="25dp"
+                android:id="@+id/round"
+                android:gravity="center_horizontal"
+                android:text="Round 1"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_below="@id/round"
+                android:id="@+id/numView"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Number"
+                    android:padding="10dp"
+                    android:textSize="25dp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19"
+                    android:id="@+id/txtView"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/resultView"
+                android:layout_below="@id/round"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Correct Ans."
+                    android:id="@+id/textNum"
+                    android:padding="10dp"
+                    android:textSize="25dp"
+                    android:textColor="#000000"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="__"
+                    android:id="@+id/corrNum"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/resultView"
+                android:layout_width="fill_parent"
+                android:id="@+id/editView"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <EditText
+
+                    android:background="@drawable/edit"
+                    android:padding="10dp"
+                    android:layout_margin="10dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:textSize="20dp"
+                    android:hint="Enter 1 Digit Number"
+                    android:id="@+id/pickNumber"
+                    />
+                <Button
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edit"
+                    android:layout_width="100dp"
+                    android:id="@+id/btnSubmit"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/editView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/btnLayout">
 
 
-    <Button
+            <Button
+                android:background="@drawable/team"
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textStyle="bold"
+                android:id="@+id/btnNext"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:background="@drawable/team"
+                android:layout_margin="20dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content"
+                android:text="Solve"
+                android:id="@+id/btnSolve" />
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Next"
-        android:id="@+id/btnNext"
-        />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Solve"
-        android:id="@+id/btnSolve" />
+            </LinearLayout>
 
-    </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_below="@id/btnLayout"
-        android:id="@+id/noTextView"
-        android:text="Please Enter 1 to 999 Number"/>
-    <EditText
-        android:layout_below="@id/noTextView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:inputType="number"
-        android:id="@+id/pickNumber"
-        />
+            <TextView
+                android:layout_below="@id/btnLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:padding="10dp"
+                android:id="@+id/score"
+                android:gravity="center"
+                android:textColor="#00bcd4"
+                android:text=""/>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>
