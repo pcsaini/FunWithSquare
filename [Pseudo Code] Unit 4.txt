@@ -1,0 +1,66 @@
+/*
+*
+*Google: Applied CS with Android
+*
+*Created by Rajat Talesra
+*Date: 24/09/2016
+*
+*Unit 3 Ghost Part II
+*Pseudo Code
+*
+*References:
+*https://www.youtube.com/watch?v=AXjmTQ8LEoI
+*http://www.programcreek.com/2014/05/leetcode-implement-trie-prefix-tree-java/
+*/
+
+POINTS:
+*Each trie node will have 26 children + 1 value (isWord)
+*Trie Order of complexity is n (length of string)
+*We are using hashmap to establish parent-child relationship
+
+1. Update onCreate Method and change HashMap key to character
+
+2. TrieNode || add Method
+	2.1 Create temp hashmap
+	2.2 Run loop for each character
+		2.2.1 Read current character
+		2.2.2 If hashmap contains current key, then get TrieNode
+		2.2.3 Else create new TrieNode and add to hashmap
+		2.2.4 update reference to hashmap
+		2.2.5 If word is complete then mark as leaf/isWord
+
+3. TrieNode || isWord Method
+	3.1 Apply searchNode method on TrieNode
+	3.2 if TrieNode is not null and isWord true, return true
+	3.3 else false
+
+4. TrieNode || searchNode Method
+	4.1 Create temp hashmap
+	4.2 Create temp trieNode
+	4.3 Run loop for each character
+		4.3.1 Read character
+		4.3.2 If hashmap contains current key, then get TrieNode
+		4.3.3 update reference to hashmap
+		4.3.4 else, return null
+
+5. TrieNode || getAnyWordStartingWith Method
+	5.1 Get trieNode using searchNode
+	5.2 Temp hashmap
+	5.3 if trieNode null, return null
+	5.4 else, while (triNode is not a word)
+		5.4.1 update reference to hashmap
+		5.4.2 get next character
+		5.4.3 add that to current string
+		5.4.4 move to next TrieNode
+		5.4.5 return string
+
+6. TrieNode || getAnyGoodWordStarttingWith
+	6.1 Get current TrieNode
+	6.2 Run loop for each character
+		6.2.1 if key exists, update TrieNode
+		6.2.2 else null
+	6.3 Run infinite loop
+		6.3.1 Read character
+		6.3.2 Return String if c is null and hashmap size >1
+		6.3.3 else, add character and move to next triNode
+

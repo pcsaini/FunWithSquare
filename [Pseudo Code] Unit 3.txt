@@ -1,0 +1,82 @@
+/*
+*
+*Google: Applied CS with Android
+*
+*Created by Rajat Talesra
+*Date: 21/09/2016
+*
+*Unit 3 Ghost Part I
+*Pseudo Code
+*
+*/
+
+1. Create the UI XML file
+	1.1 Two textviews
+	1.2 Two buttons (bChallenge, bRestart)
+
+2. onCreate Method
+	2.1 Global view variables
+	2.2 Initialize these variables and set OnClickListener
+	2.3 Global variables for input stream and simple dictionary
+	2.4 Initialize simple dictionary with text file
+
+3. onKeyUp Method
+	3.1 Get character
+	3.2 check Character
+	3.3 If valid char, then 
+		3.3.1 get currenttext
+		3.3.2 update the text
+		3.3.3 change label
+		3.3.4 computerTurn
+		3.3.5 return
+	3.4 else, Toast and return
+
+***************************************
+*********You can check the app*********
+***************************************
+
+4. computerTurn Method
+	4.1 Get current string
+	4.2 If it is a valid word and greater than 4 chars (COMPUTER WINS)
+	4.3 Else,
+		4.3.1 Get word with the current string
+		4.3.2 If word is null (COMPUTER WINS)
+		4.3.3 Else, get next char and display
+	4.4 userTurn = true
+	4.5 change label
+
+5. Simple Dictionary || getAnyWordStartingWith Method
+	5.1 if prefix null, return random word from dictiionary
+	5.2 else, perform binary search
+
+6. Simple Dictionary || binarySearchToFindWord Method
+	6.1 Arguments prefix, start, end
+	6.2 find mid
+	6.3 if (end > start) then,
+		6.3.1 if mid word is string retrun null as it is should not be a word.
+		6.3.2 decide which part to traverse again upper or lower.
+	6.4 else return null
+
+6. GhostActivity || Challenge Method
+	6.1 Get current text
+	6.2 IF length is >4 and is a word then (USER WINS)
+	6.3 else,
+		6.3.1 Get any word with that prefix from list
+		6.3.2 If word exists then (COMPUTER WINS)
+		6.3.3 else, (USER WINS)
+
+7. GhostActivity || Restart Method
+	7.1 Update word and label
+
+
+TASK 8:
+Saving Instance
+	1. OnSaveInstanceMethod
+	2. OnRestoreInstanceMethod
+	3. Changes in manifest file.
+
+TASK 9:
+Keeping Scores
+	1. keep scores
+	2. save to OnSaveInstanceMethod
+	3. fetch the value in onCreate Method.
