@@ -9,24 +9,21 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class Instructions extends AppCompatActivity {
+public class Team extends AppCompatActivity {
 
     Button btnPlay;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_instructions);
+        setContentView(R.layout.activity_team);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        btnPlay = (Button) findViewById(R.id.btnPlayInst);
+        btnPlay = (Button) findViewById(R.id.btnPlayTeam);
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Instructions.this, Game.class));
+                startActivity(new Intent(Team.this, Game.class));
             }
         });
     }

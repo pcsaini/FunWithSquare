@@ -35,11 +35,11 @@
     <include layout="@layout/content_instructions" />
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/btnPlayInst"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email"
+        android:src="@drawable/play"
         app:layout_anchor="@id/app_bar"
         app:layout_anchorGravity="bottom|end" />
 
