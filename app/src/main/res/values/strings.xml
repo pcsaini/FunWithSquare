@@ -1,3 +1,21 @@
 <resources>
-    <string name="app_name">Hackathon</string>
+    <string name="app_name">(Fun_Math)^2</string>
+    <string name="title_activity_instructions">Instructions</string>
+    <string name="large_text">
+        "(Fun_Math)^2 \n\n"
+
+        "(Fun_Math)^2 is a simple math game where user need to guess the correct length perfect square given the prefix. There are basically three rounds.\n\n"
+        "First Round:\n"
+        "User need to guess 5 different perfect squares of length 3 given a prefix of length 2."
+        "If user is able to guess the correct square then"
+        "he wins and press next to continue\n\n"
+        "Second Round:\n"
+        "Here the user need to guess 5 different perfect squares of length 4 given a prefix of length 2.\n\n"
+        "Third Round:\n"
+        "Here the user need to guess 5 different perfect squares of length 5 given a prefix of length 2.\n\n"
+        "Next he enter FINISH to end the game."
+
+
+    </string>
+    <string name="action_settings">Settings</string>
 </resources>
