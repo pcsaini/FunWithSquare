@@ -14,7 +14,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/text_margin"
         android:layout_marginBottom="50dp"
-        android:textSize="22dp"
+        android:textSize="18dp"
+        android:textAlignment="center"
         android:textColor="#000000"
         android:text="@string/large_text" />
 

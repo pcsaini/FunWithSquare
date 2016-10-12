@@ -79,7 +79,7 @@ public class Game extends AppCompatActivity {
                     if(s1.equals(s3)){
                         txtView.setText(""+s3);
                         score+=5;
-                        Score.setText("Current Score : "+score);
+                        Score.setText(""+score);
 
                         //Toast.makeText(this,"You Won Press Next",Toast.LENGTH_LONG).show();
                     }
@@ -90,7 +90,7 @@ public class Game extends AppCompatActivity {
                         }}
                     CorrectNum.setText(Math.sqrt(randomNumber)+" : "+randomNumber);
                     editText.setText("");
-                    Score.setText("Current Score : "+score);
+                    Score.setText(""+score);
                 }
                 else
                 {
