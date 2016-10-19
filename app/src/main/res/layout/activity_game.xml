@@ -27,7 +27,7 @@
                 android:textSize="18dp"
                 android:id="@+id/round"
                 android:gravity="center_horizontal"
-                android:text="Round 1"/>
+                android:text="Round 1 : Turn 1"/>
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
