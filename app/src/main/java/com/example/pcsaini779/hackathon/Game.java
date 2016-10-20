@@ -47,14 +47,14 @@ public class Game extends AppCompatActivity {
         nextRound = (TextView) findViewById(R.id.nextRound);
 
 
-        pickNumber(3);
+        pickNumber(start);
 
         btnSolve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 flag = true;
                 //txtView.setText(""+randomNumber);
-                CorrectNum.setText(Math.sqrt(randomNumber) + " : " + randomNumber);
+                CorrectNum.setText((int)Math.sqrt(randomNumber) + " : " + randomNumber);
                 OK.setEnabled(false);
                 btnSolve.setEnabled(false);
 
@@ -76,7 +76,7 @@ public class Game extends AppCompatActivity {
                         turn++;
                         Round.setText("Round " + (start - 2) +" : Turn " + turn);
                         flag = false;
-                        pickNumber(3);
+                        pickNumber(start);
                         CorrectNum.setText("_");
 
                     } else {
@@ -135,7 +135,7 @@ public class Game extends AppCompatActivity {
                 Toast.makeText(Game.this, "You Loss Press Next", Toast.LENGTH_LONG).show();
                 score -= 2;
             }
-            CorrectNum.setText(Math.sqrt(randomNumber) + " : " + randomNumber);
+            CorrectNum.setText((int)Math.sqrt(randomNumber) + " : " + randomNumber);
             editText.setText("");
             Score.setText("" + score);
         } else {
@@ -156,7 +156,7 @@ public class Game extends AppCompatActivity {
         Round.setText("Round " + (start - 1));
         pt.makeEmpty();
         start++;
-        pickNumber(3);
+        pickNumber(start);
         control = 0;
         //score = 0;
         turn = 0;
@@ -168,10 +168,11 @@ public class Game extends AppCompatActivity {
         control = 0;
         turn = 1;
         score = 0;
-        pickNumber(3);
+        pickNumber(start);
     }
     public void firstRound(){
         pt.makeEmpty();
-        pickNumber(3);
+        start = 3;
+        pickNumber(start);
     }
 }

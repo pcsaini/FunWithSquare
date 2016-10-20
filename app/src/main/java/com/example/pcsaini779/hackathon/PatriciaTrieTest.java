@@ -142,7 +142,7 @@ public class PatriciaTrieTest {
             }
             if(digit3==5){
                 int count=0,start=0,end=0;
-                for(int i=1; i<100; i++)
+                for(int i=1; i<320; i++)
                 {
                     int w=0;
                     int k=i*i;
