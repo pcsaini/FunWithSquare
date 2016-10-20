@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,Game.class));
+                startActivity(new Intent(MainActivity.this,ChooseGame.class));
             }
         });
         btnInst.setOnClickListener(new View.OnClickListener() {
