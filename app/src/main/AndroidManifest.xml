@@ -23,7 +23,9 @@
         <activity
             android:name=".Team"
             android:label="@string/title_activity_team"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ChooseGame" />
+        <activity android:name=".Gamecube"></activity>
     </application>
 
 </manifest>
