@@ -18,7 +18,7 @@ public class Game extends AppCompatActivity {
     TextView txtView, CorrectNum,Score, Round;
     Boolean flag1 = false, flag2 = false;
     Button btnNext, btnSolve, OK;
-    EditText editText;
+    TextView editText;
     Random r;
     String Square="2";
     int randomNumber, size = 0, a, start = 3, control = 0, TotalScore = 0,CurrentScore=0,x = 0, k = 0;
@@ -40,7 +40,7 @@ public class Game extends AppCompatActivity {
         CorrectNum = (TextView) findViewById(R.id.corrNum);
         btnNext = (Button) findViewById(R.id.btnNext);
         btnSolve = (Button) findViewById(R.id.btnSolve);
-        editText = (EditText) findViewById(R.id.pickNumber);
+        editText = (TextView) findViewById(R.id.pickNumber);
         OK = (Button) findViewById(R.id.btnSubmit);
         btnNext.setEnabled(flag2);
         y = ptt.game(pt, start, Square);
@@ -76,7 +76,7 @@ public class Game extends AppCompatActivity {
                     if (s1.equals(s3)) {
                         txtView.setText("" + s3);
                         CurrentScore += 5;
-                        Score.setText("" + CurrentScore);
+                        Score.setText("Score: " + CurrentScore);
                     } else {
                         txtView.setText("" + s3);
                         if (CurrentScore > 2) {
@@ -86,7 +86,7 @@ public class Game extends AppCompatActivity {
                     }
                     CorrectNum.setText((int) Math.sqrt(randomNumber) + " : " + randomNumber);
                     editText.setText("");
-                    Score.setText("" + CurrentScore);
+                    Score.setText("Score: " + CurrentScore);
                     flag1 = false;
                     OK.setEnabled(flag1);
                     flag2 = true;
@@ -109,7 +109,7 @@ public class Game extends AppCompatActivity {
                         y.remove(x);
                         a = randomNumber / 10;
                         txtView.setText("" + a);
-                        CorrectNum.setText("0");
+                        CorrectNum.setText("");
 
 
                     } else {
@@ -131,7 +131,7 @@ public class Game extends AppCompatActivity {
                             Log.e("Hello","Total Score"+TotalScore);
                             CurrentScore = 0;
 
-                            CorrectNum.setText("0");
+                            CorrectNum.setText("");
                         } else {
                             pt.makeEmpty();
                             y = ptt.game(pt, start, Square);
@@ -154,6 +154,10 @@ public class Game extends AppCompatActivity {
 
             }
         });
+    }
+
+    public void putNumber(View v){
+        editText.setText(v.getTag().toString());
     }
 
    /* public  int pickNumber(){
