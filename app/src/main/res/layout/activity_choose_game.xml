@@ -7,6 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
     tools:context="com.example.pcsaini779.hackathon.ChooseGame">
 
 
@@ -14,19 +16,20 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Square^2"
-        android:textColor="#FF1111"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
         android:id="@+id/square"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="121dp"
-        android:background=""/>
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"/>
 
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Cube^3"
-        android:textColor="#FF1111"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
         android:id="@+id/cube"
-        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:layout_below="@id/square"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
