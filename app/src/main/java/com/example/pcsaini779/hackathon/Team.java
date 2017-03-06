@@ -20,7 +20,6 @@ public class Team extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         btnPlay = (FloatingActionButton) findViewById(R.id.btnPlayTeam);
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override

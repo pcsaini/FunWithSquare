@@ -14,13 +14,13 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Game extends AppCompatActivity {
+public class Gamecube extends AppCompatActivity {
     TextView txtView, CorrectNum,Score, Round;
     Boolean flag1 = false, flag2 = false;
     Button btnNext, btnSolve, OK;
     TextView editText;
     Random r;
-    String Square="2";
+    String Square="3";
     int randomNumber, size = 0, a, start = 3, control = 0, TotalScore = 0,CurrentScore=0,x = 0, k = 0;
     ArrayList<Integer> y;
     PatriciaTrieTest ptt = new PatriciaTrieTest();
@@ -44,16 +44,14 @@ public class Game extends AppCompatActivity {
         OK = (Button) findViewById(R.id.btnSubmit);
         btnNext.setEnabled(flag2);
         y = ptt.game(pt, start, Square);
-        x = r.nextInt(y.size());//
-        randomNumber = y.get(x);
-        y.remove(x);
+        randomNumber=pickNumber();
         a = randomNumber / 10;
 
         txtView.setText("" + a);
         btnSolve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CorrectNum.setText((int) Math.sqrt(randomNumber) + " : " + randomNumber);
+                CorrectNum.setText((int) Math.cbrt(randomNumber) + " : " + randomNumber);
                 flag2 = true;
                 flag1 = false;
                 btnNext.setEnabled(flag2);
@@ -84,7 +82,7 @@ public class Game extends AppCompatActivity {
                         }
 
                     }
-                    CorrectNum.setText((int) Math.sqrt(randomNumber) + " : " + randomNumber);
+                    CorrectNum.setText((int) Math.cbrt(randomNumber) + " : " + randomNumber);
                     editText.setText("");
                     Score.setText("Score: " + CurrentScore);
                     flag1 = false;
@@ -100,30 +98,22 @@ public class Game extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (flag2 == true) {
-                    if (control < 5) {
+                    if (control < 3) {
                         control++;
                         flag2 = false;
-                       // randomNumber=pickNumber();
-                        x = r.nextInt(y.size());//
-                        randomNumber = y.get(x);
-                        y.remove(x);
+                        randomNumber=pickNumber();
                         a = randomNumber / 10;
                         txtView.setText("" + a);
                         CorrectNum.setText("");
 
 
                     } else {
-                        if (CurrentScore >= 10) {
+                        if (CurrentScore > 15) {
                             Round.setText("Round " + (start-1));
                             pt.makeEmpty();
                             start++;
-                            y.clear();
                             y = ptt.game(pt, start, Square);
-                            x = r.nextInt(y.size());//
-                            randomNumber = y.get(x);
-                            y.remove(x);
-                            //randomNumber=pickNumber();//
-
+                            randomNumber=pickNumber();//
                             a = randomNumber / 10;
                             txtView.setText("" + a);
                             control = 0;
@@ -135,11 +125,7 @@ public class Game extends AppCompatActivity {
                         } else {
                             pt.makeEmpty();
                             y = ptt.game(pt, start, Square);
-                            //randomNumber=pickNumber();
-
-                            x = r.nextInt(y.size());//
-                            randomNumber = y.get(x);
-                            y.remove(x);
+                            randomNumber=pickNumber();
                             a = randomNumber / 10;
                             txtView.setText("" + a);
                             control = 0;
@@ -155,17 +141,16 @@ public class Game extends AppCompatActivity {
             }
         });
     }
+    public  int pickNumber(){
+     Toast.makeText(this,"hello"+y.size(),Toast.LENGTH_SHORT).show();
+        x = r.nextInt(y.size());//
+        randomNumber = y.get(x);
+        y.remove(x);
+        return randomNumber;
+    }
 
     public void putNumber(View v){
         editText.setText(v.getTag().toString());
     }
 
-   /* public  int pickNumber(){
-        Toast.makeText(Game.this, "Size"+y.size(), Toast.LENGTH_SHORT).show();
-        x = r.nextInt(y.size());//
-        randomNumber = y.get(x);
-        y.remove(x);
-        return randomNumber;
-
-    }*/
 }

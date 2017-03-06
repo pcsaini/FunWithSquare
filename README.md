@@ -1,10 +1,14 @@
 ## Hackathon CSwithAndroid 2k16
  
-## FunWithMath
+## FunWithSquare
 
-  # Perfect Square game.
+  
+| ![](Screenshot_2017-01-14-02-42-59.png) | ![](Screenshot_2017-01-14-02-43-04.png)  |
+|-------------------------------------------|--------------------------------------------|
+| ![](Screenshot_2017-01-14-02-43-20.png) | ![](Screenshot_2017-01-14-02-43-55.png)  | 
    
-   This is Android Fun game to add digit and make a perfect Square Number and perfect cube and perfect fourth root  for a  Given prefix number.
+
+This is Android Fun game to add digit and make a perfect Square Number and perfect cube and perfect fourth root  for a  Given prefix number.
  
 * Rules of the Game:<br/>
     (Fun_Math)^2 is a simple math game where user need to guess the correct length perfect<br/>
@@ -33,5 +37,10 @@
      A radix tree is a compressed version of a trie.In a trie, on each edge you write a<br/> 
      single letter, while in a Patricia tree(or radix tree) we store whole words.<br/>
      It takes less memory compared to trie node.
-     I am presenting demo of my app.
-     https://github.com/ajit1515ajit/FunWithSquare/blob/master/img/Screenshot%20from%202017-02-03%2019:32:30.png
+### Team Members (contribution in Hackathon 2K16)
+
+* [Jitendra Singh](https://github.com/jsroyal) - Design & Implementation
+* [Ajit Jain](https://github.com/ajit1515ajit) - Algorithm & Implemention
+* [Prem Chand Saini ](https://github.com/pcsaini) - User interface 
+* [K Naveen kumar](https://github.com/naveen) - Algorithm and Readme    
+
