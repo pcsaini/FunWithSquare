@@ -1,4 +1,4 @@
-package com.example.pcsaini779.hackathon;
+package com.game.ajitrajeev.funwithsquare;
 
 import java.util.ArrayList;
 import java.util.Random;

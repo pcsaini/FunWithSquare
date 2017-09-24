@@ -9,7 +9,7 @@
      android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     android:gravity="center"
-    tools:context="com.example.pcsaini779.hackathon.MainActivity">
+    tools:context="com.game.ajitrajeev.funwithsquare.MainActivity">
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"

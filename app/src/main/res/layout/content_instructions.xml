@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.pcsaini779.hackathon.Instructions"
+    tools:context="com.game.ajitrajeev.funwithsquare.Instructions"
     tools:showIn="@layout/activity_instructions">
 
 
