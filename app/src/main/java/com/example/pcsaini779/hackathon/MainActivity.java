@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().setHomeButtonEnabled(true);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        /*getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
 
         btnPlay = (Button) findViewById(R.id.btnPlay);
         btnInst = (Button) findViewById(R.id.btnInst);
@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ImageView logo = (ImageView) findViewById(R.id.logo);
-        logo.setColorFilter(Color.parseColor("#ffffff"));
+        logo.setColorFilter(Color.parseColor("#3F51B5"));
 
     }
 }

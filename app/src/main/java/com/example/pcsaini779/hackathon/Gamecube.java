@@ -85,6 +85,7 @@ public class Gamecube extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CorrectNum.setText((int) Math.cbrt(randomNumber) + " : " + randomNumber);
+                CorrectNum.setVisibility(View.VISIBLE);
                 flag2 = true;
                 flag1 = false;
                 btnNext.setEnabled(flag2);
@@ -116,6 +117,7 @@ public class Gamecube extends AppCompatActivity {
 
                     }
                     CorrectNum.setText((int) Math.cbrt(randomNumber) + " : " + randomNumber);
+                    CorrectNum.setVisibility(View.VISIBLE);
                     editText.setText("");
                     Score.setText("Score: " + CurrentScore);
                     flag1 = false;
@@ -169,13 +171,14 @@ public class Gamecube extends AppCompatActivity {
                     flag1 = true;
                     flag2 = false;
                     btnNext.setEnabled(flag2);
+                    CorrectNum.setVisibility(View.GONE);
+                    editText.setText("");
                 }
 
             }
         });
     }
     public  int pickNumber(){
-     Toast.makeText(this,"hello"+y.size(),Toast.LENGTH_SHORT).show();
         x = r.nextInt(y.size());//
         randomNumber = y.get(x);
         y.remove(x);
