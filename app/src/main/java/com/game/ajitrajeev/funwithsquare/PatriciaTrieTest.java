@@ -92,12 +92,12 @@ public class PatriciaTrieTest {
         int y = 0;
         ArrayList<Integer> show = new ArrayList<Integer>();
         if (Square == "2") {
-            for (int i = 1; i < 30; i++) {
+         /*   for (int i = 1; i < 100; i++) {
                 pt.insert(i * i);
-            }
+            }*/
             int count = 0, start = 0, end = 0;
 
-            for (int i = 1; i < 30; i++) {
+            for (int i = 1; i < 150; i++) {
                 int w = 0;
                 int k = i * i;
                 while (k > 0) {
@@ -118,9 +118,9 @@ public class PatriciaTrieTest {
             show = square(start, end);
         }
         if (Square == "3") {
-            for (int i = 1; i <50; i++) {
+            /*for (int i = 1; i <50; i++) {
                 pt.insert(i * i * i);
-            }
+            }*/
             int count = 0, start = 0, end = 0;
             for (int i = 1; i < 50; i++) {
                 int w = 0;
@@ -143,9 +143,9 @@ public class PatriciaTrieTest {
             show = qube(start, end);
         }
         if (Square == "4") {
-            for (int i = 1; i < 50; i++) {
+          /*  for (int i = 1; i < 50; i++) {
                 pt.insert(i * i * i * i);
-            }
+            }*/
             int count = 0, start = 0, end = 0;
             for (int i = 1; i < 50; i++) {
                 int w = 0;
