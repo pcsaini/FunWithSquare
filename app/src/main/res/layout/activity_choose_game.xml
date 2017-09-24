@@ -7,27 +7,24 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#CFD8DC"
+    android:background="#FFFFFF"
     android:gravity="center"
     tools:context="com.example.pcsaini779.hackathon.ChooseGame">
-
-
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Square Game"
         android:textColor="#fff"
-        android:background="#1E669B"
+        android:background="@drawable/btn"
         android:id="@+id/square"
         android:layout_margin="5dp"
         android:layout_centerHorizontal="true"/>
-
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Cube  Game"
         android:textColor="#fff"
-        android:background="#1E669B"
+        android:background="@drawable/btn"
         android:id="@+id/cube"
         android:layout_margin="5dp"
         android:layout_below="@id/square"

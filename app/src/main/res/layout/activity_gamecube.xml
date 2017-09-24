@@ -6,15 +6,21 @@
     xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal"
     tools:context="com.example.pcsaini779.hackathon.Game"
-    android:background="#40C4FF">
+    android:background="#00E676">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
     <LinearLayout
         android:id="@+id/stat"
         android:padding="20dp"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dp">
         <TextView
             android:id="@+id/round"
             android:textColor="#fff"
@@ -58,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text=""
-            android:textColor="#bbb"
+            android:textColor="#3F51B5"
             android:textSize="64dp"/>
 
     </RelativeLayout>
@@ -70,7 +76,8 @@
         android:layout_height="wrap_content"
         android:text=" "
         android:layout_centerHorizontal="true"
-        android:textColor="#bbb"
+        android:textColor="#3F51B5"
+        android:visibility="gone"
         android:textSize="48dp"/>
 
     <RelativeLayout
@@ -219,8 +226,8 @@
     <RelativeLayout
         android:gravity="center_horizontal"
         android:layout_below="@id/btns"
+        android:id="@id/action_buttons"
         android:layout_marginTop="10dp"
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -255,10 +262,8 @@
             android:id="@+id/btnSolve"
             android:layout_margin="10dp"
             android:text="Solve"/>
-
-    </RelativeLayout>
-
-    <Button
+        </RelativeLayout>
+        <Button
         android:layout_alignParentBottom="true"
         android:background="@color/colorPrimaryDark"
         android:layout_width="match_parent"
@@ -268,7 +273,10 @@
         android:id="@+id/nextRound"
         android:textColor="#fff"/>
     <com.google.android.gms.ads.AdView
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:id="@+id/adView2"
+        android:layout_below="@id/action_buttons"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -276,5 +284,7 @@
         ads:adSize="BANNER"
         ads:adUnitId="@string/banner_ad_unit_id">
     </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
+    </ScrollView>
 
 </RelativeLayout>

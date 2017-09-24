@@ -14,7 +14,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Game" />
+        <activity android:name=".Game"
+            android:label="Square"
+            android:parentActivityName=".ChooseGame"/>
         <activity
             android:name=".Instructions"
             android:label="@string/title_activity_instructions"
@@ -26,8 +28,11 @@
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ChooseGame"
+            android:label="Game Selection"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name=".Gamecube"></activity>
+        <activity android:name=".Gamecube"
+            android:parentActivityName=".ChooseGame"
+            android:label="Cube"></activity>
     </application>
 
 </manifest>

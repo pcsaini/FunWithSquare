@@ -23,7 +23,6 @@ public class Game extends AppCompatActivity {
     //adnetworks
     InterstitialAd mInterstitialAd;
     private InterstitialAd interstitial;
-
     TextView txtView, CorrectNum,Score, Round;
     Boolean flag1 = false, flag2 = false;
     Button btnNext, btnSolve, OK;
@@ -85,6 +84,7 @@ public class Game extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 CorrectNum.setText((int) Math.sqrt(randomNumber) + " : " + randomNumber);
+                CorrectNum.setVisibility(View.VISIBLE);
                 flag2 = true;
                 flag1 = false;
                 btnNext.setEnabled(flag2);
@@ -116,6 +116,7 @@ public class Game extends AppCompatActivity {
 
                     }
                     CorrectNum.setText((int) Math.sqrt(randomNumber) + " : " + randomNumber);
+                    CorrectNum.setVisibility(View.VISIBLE);
                     editText.setText("");
                     Score.setText("Score: " + CurrentScore);
                     flag1 = false;
@@ -130,6 +131,7 @@ public class Game extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                CorrectNum.setVisibility(View.GONE);
                 if (flag2 == true) {
                     if (control < 5) {
                         control++;
@@ -181,6 +183,7 @@ public class Game extends AppCompatActivity {
                     flag1 = true;
                     flag2 = false;
                     btnNext.setEnabled(flag2);
+                    editText.setText("");
                 }
 
             }

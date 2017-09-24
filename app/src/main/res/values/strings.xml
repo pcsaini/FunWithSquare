@@ -4,7 +4,7 @@
     <string name="large_text">
        "<b>(Fun_Math)^2</b> \n\n"
 
-        "<b>(Fun_Math)^2</b> is a simple math game where user need to guess the correct length perfect square given the prefix. There are basically three rounds.\n\n"
+        "<b>(Fun_Math)^2</b> is a simple math game where user need to guess the correct length perfect square or perfect cube given the prefix. There are basically three rounds.\n\n"
         "<b>First Round:</b>\n"
         "User need to guess 5 different perfect squares of length 3 given a prefix of length 2."
         "If user is able to guess the correct square then"
