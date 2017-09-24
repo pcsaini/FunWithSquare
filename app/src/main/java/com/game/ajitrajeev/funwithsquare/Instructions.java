@@ -1,4 +1,4 @@
-package com.example.pcsaini779.hackathon;
+package com.game.ajitrajeev.funwithsquare;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,24 +7,33 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
-public class Team extends AppCompatActivity {
+public class Instructions extends AppCompatActivity {
 
     FloatingActionButton btnPlay;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_team);
+        setContentView(R.layout.activity_instructions);
+
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        btnPlay = (FloatingActionButton) findViewById(R.id.btnPlayTeam);
+
+
+
+        btnPlay = (FloatingActionButton) findViewById(R.id.btnPlayInst);
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Team.this, Game.class));
+                startActivity(new Intent(Instructions.this, Game.class));
             }
         });
     }

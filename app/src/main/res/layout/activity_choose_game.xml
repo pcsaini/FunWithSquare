@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#FFFFFF"
     android:gravity="center"
-    tools:context="com.example.pcsaini779.hackathon.ChooseGame">
+    tools:context="com.game.ajitrajeev.funwithsquare.ChooseGame">
     <Button
         android:layout_width="200dp"
         android:layout_height="wrap_content"

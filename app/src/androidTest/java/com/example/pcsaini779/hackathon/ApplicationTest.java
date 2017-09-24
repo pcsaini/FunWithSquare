@@ -1,4 +1,4 @@
-package com.example.pcsaini779.hackathon;
+package com.game.ajitrajeev.funwithsquare;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
