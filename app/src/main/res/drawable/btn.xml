@@ -3,8 +3,9 @@
 
     <stroke
         android:width="5dp"
-        android:color="#e91e63" />
-
+        android:color="#e91e63"
+        />
+    <solid android:color="@color/colorPrimaryDark"/>
     <corners android:radius="5dp" />
 
 </shape>
