@@ -40,7 +40,8 @@ This is Android Fun game to add digit and make a perfect Square Number and perfe
 ### Team Members (contribution in Hackathon 2K16)
 
 * [Jitendra Singh](https://github.com/jsroyal) - Design & Implementation
-* [Ajit Jain](https://github.com/ajit1515ajit) - Algorithm & Implemention
+* [Ajit Jain](https://github.com/ajit-999) - Algorithm & Implemention
 * [Prem Chand Saini ](https://github.com/pcsaini) - User interface 
-* [K Naveen kumar](https://github.com/naveen) - Algorithm and Readme    
+* [K Naveen kumar](https://github.com/naveen) - Algorithm and Readme
+* [Rajeev Kumar Singh](https://github.com/rajeeviiit) - Algorithm and Readme    
 
