@@ -31,7 +31,8 @@ public class Game extends AppCompatActivity {
     String Square="2";
     int randomNumber, size = 0, a, start = 3, control = 0, TotalScore = 0,CurrentScore=0,x = 0, k = 0;
     ArrayList<Integer> y;
-    PatriciaTrieTest ptt = new PatriciaTrieTest(); PatriciaTrie pt = new PatriciaTrie();
+    PatriciaTrieTest ptt = new PatriciaTrieTest();
+    PatriciaTrie pt = new PatriciaTrie();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -78,7 +79,6 @@ public class Game extends AppCompatActivity {
         randomNumber = y.get(x);
         y.remove(x);
         a = randomNumber / 10;
-
         txtView.setText("" + a);
         btnSolve.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,7 +96,6 @@ public class Game extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String s = editText.getText().toString();
-
                 if (s != null && s != "") {
                     flag2 = true;
                     btnNext.setEnabled(flag2);
@@ -143,8 +142,6 @@ public class Game extends AppCompatActivity {
                         a = randomNumber / 10;
                         txtView.setText("" + a);
                         CorrectNum.setText("");
-
-
                     } else {
                         if (CurrentScore >= 10) {
                             Round.setText("Round " + (start-1));
@@ -152,6 +149,7 @@ public class Game extends AppCompatActivity {
                             start++;
                             y.clear();
                             y = ptt.game(pt, start, Square);
+                            Log.d("Value of Y ","   "+y.size());
                             x = r.nextInt(y.size());//
                             randomNumber = y.get(x);
                             y.remove(x);
